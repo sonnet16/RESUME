@@ -278,7 +278,6 @@ img{
 
 /* ===== ABOUT =====*/
 .about__container{
-  height: calc(100vh - var(--header-height));
   row-gap: 2rem;
 }
 
@@ -327,7 +326,6 @@ img{
 
 /* ===== SKILLS =====*/
 .skills__container{
-  height: calc(100vh - var(--header-height));
   row-gap: 2rem;
 }
 .skills__subtitle{
@@ -407,7 +405,6 @@ img{
 
 /* ===== EDUCATION =====*/
 .education__container{
-  height: calc(100vh - var(--header-height));
   row-gap: 3rem;
 }
 
@@ -465,14 +462,13 @@ img{
   display: block;
   height: 90%;
   width: 2px;
-  border-color: var(--first-color);
+  background-color: var(--first-color);
   transform: translate(5px, -4px);
 }
 
 
 /* ===== WORKS =====*/
 .works__container{
-  height: calc(100vh - var(--header-height));
   justify-items: center;
   row-gap: 2rem;
 }
@@ -696,5 +692,8 @@ img{
   }
   .works__container{
     grid-template-columns: repeat(3,1fr);
+  }
+  .about__container, .education_container, .works__container, .skills__container{
+    height: calc(100vh - var(--header-height));
   }
 }
